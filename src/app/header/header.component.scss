@@ -1,0 +1,9 @@
+@import "../../mixins";
+@import "../../variables";
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+  color: $orange;
+}

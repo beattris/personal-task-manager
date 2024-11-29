@@ -1,0 +1,67 @@
+// @function color($color-name){
+//     @return var(--color-#{$color-name});
+// }
+
+@mixin container {
+  max-width: calc(100% - 10%);
+  margin: 0 auto;
+}
+
+@mixin hero-container {
+  max-width: calc(100% - 20%);
+  margin: 4.5rem auto 0 auto;
+}
+
+@mixin mobile {
+  @media screen and (max-width: map-get($map: $breakpoints, $key: mobile)) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media screen and (min-width: map-get($map: $breakpoints, $key: ipad)) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (min-width: map-get($map: $breakpoints, $key: small)) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: map-get($map: $breakpoints, $key: medium)) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (min-width: map-get($map: $breakpoints, $key: large)) {
+    @content;
+  }
+}
+
+@mixin fxlarge {
+  @media screen and (min-width: map-get($map: $breakpoints, $key: fxlarge)) {
+    @content;
+  }
+}
+
+@mixin xlarge {
+  @media screen and (min-width: map-get($map: $breakpoints, $key: xlarge)) {
+    @content;
+  }
+}
+
+@mixin ldesktop {
+  @media screen and (min-width: map-get($map: $breakpoints, $key: ldesktop)) {
+    @content;
+  }
+}
+
+@mixin high {
+  @media screen and (min-width: map-get($map: $breakpoints, $key: high)) {
+    @content;
+  }
+}
